@@ -1,0 +1,18 @@
+Internal Server Error: /process_form/ 
+Traceback (most recent call last):
+
+  File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response
+    
+  File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+    
+  File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+    
+  File "C:\Users\User\PycharmProjects\Prof\prof\profapp\views.py", line 1031, in process_form
+    sincere = sincerity()
+    
+  File "C:\Users\User\PycharmProjects\Prof\prof\profapp\views.py", line 567, in sincerity
+        r1c1, r2c1, r3c1, r4c1, r1c2, r2c2, r3c2, r4c2, r1c3, r2c3, r3c3, r4c3, r1c4, r2c4, r3c4, r4c4, \
+ValueError: not enough values to unpack (expected 64, got 7)
